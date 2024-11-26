@@ -1,0 +1,122 @@
+@font-face {
+    font-family: Barlow;
+    src: url(/fonts/BarlowSemiCondensed-Medium.ttf);
+}
+
+body{
+    background-color: hsl(0, 0%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: Barlow;
+}
+
+h1{
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 14px;
+    color: rgb(195, 195, 195);
+}
+
+img{
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+div{
+    border-radius: 10px;
+}
+
+.head{
+    display: flex;
+    justify-content: left;
+    gap: 1.5rem;
+    margin-left: 7%;
+    margin-top: 7%;
+}
+
+.table{
+    display: grid;
+    min-height: 100vh;
+    max-width: 1200px;
+    max-height: 600px;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: auto;
+    gap: 1.5rem;
+    grid-template-areas: 
+    'box1 box1 box2 box5'
+    'box3 box4 box4 box5'
+    ;
+}
+
+.text{
+    font-size: 13px;
+    color: hsl(0, 0%, 81%);
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: justify;
+}
+
+.title{
+    font-size: 21px;
+    color: white;
+    font-weight: bold;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.purplezone{
+    grid-area: box1;
+    background-color: hsl(263, 55%, 52%);
+}
+
+.greyzone{
+    grid-area: box2;
+    background-color: hsl(217, 19%, 35%);
+}
+
+.whitezone{
+    grid-area: box3;
+    background-color: white;
+    
+}
+
+.whitezone .title{
+    color: black;
+}
+
+.whitezone .text{
+    color: grey;
+}
+
+.whitezone h1{
+    color: black;
+}
+
+.blackzone{
+    grid-area: box4;
+    background-color: hsl(219, 29%, 14%);
+}
+
+.bigwhitezone{
+    grid-area: box5;
+    background-color: white;
+}
+
+.bigwhitezone .text{
+    color: grey;
+}
+
+.bigwhitezone .title{
+    color: black;
+}
+
+.bigwhitezone h1{
+    color: black;
+}
